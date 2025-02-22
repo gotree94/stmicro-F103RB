@@ -1,0 +1,16 @@
+21:28:40 **** Incremental Build of configuration Debug for project ADC_TemperatureSensor ****
+make -j16 all 
+arm-none-eabi-gcc -o "ADC_TemperatureSensor.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Administrator\Desktop\stmicro\Repository\ADC_TemperatureSensor\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ADC_TemperatureSensor.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ADC_TemperatureSensor.elf
+ 
+arm-none-eabi-size  ADC_TemperatureSensor.elf 
+arm-none-eabi-objdump -h -S ADC_TemperatureSensor.elf  > "ADC_TemperatureSensor.list"
+   text	   data	    bss	    dec	    hex	filename
+  25292	    468	   2028	  27788	   6c8c	ADC_TemperatureSensor.elf
+Finished building: default.size.stdout
+ 
+Finished building: ADC_TemperatureSensor.list
+ 
+
+21:28:41 Build Finished. 0 errors, 0 warnings. (took 941ms)
+
