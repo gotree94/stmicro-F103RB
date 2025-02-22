@@ -2,5 +2,5 @@
 ../Core/Src/main.c:111:6:SystemClock_Config	3
 ../Core/Src/main.c:150:13:MX_USART2_UART_Init	2
 ../Core/Src/main.c:183:13:MX_GPIO_Init	1
-../Core/Src/main.c:220:6:HAL_GPIO_EXIT_Callback	2
-../Core/Src/main.c:238:6:Error_Handler	1
+../Core/Src/main.c:220:6:HAL_GPIO_EXTI_Callback	2
+../Core/Src/main.c:237:6:Error_Handler	1
