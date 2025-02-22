@@ -95,9 +95,9 @@ int main(void)
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
   if (HAL_TIM_Base_Start_IT (&htim3) != HAL_OK)
-  {
-  	Error_Handler();
-  }
+  	  {
+	  	  Error_Handler();
+  	  }
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -269,8 +269,15 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-void
-HAL_TIM_
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+	gTimerCnt++;
+	if(gTimerCnt == 1000)
+	{
+		gTimerCnt = 0;
+		HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
+	}
+}
 /* USER CODE END 4 */
 
 /**
