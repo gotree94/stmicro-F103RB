@@ -1,14 +1,14 @@
 # 3.STM32CubeIDE 프로젝트 시작하기
-* 3.1 LED_Blink
-* 3.2 USART_printf
+* 3.1 LED_Blink [2025.25.22 완료]
+* 3.2 USART_printf [2025.25.22 완료]
 
 # 4.Peripheral
-* 4.1 EXTI
-* 4.2 TIM_TimeBase
-* 4.3 ADC_TemperatureSensor
-* 4.4 WWDG
-* 4.5 USART_rb
-* 4.6 TIM_PWM
+* 4.1 EXTI [2025.25.22 완료]
+* 4.2 TIM_TimeBase [2025.25.22 완료]
+* 4.3 ADC_TemperatureSensor [2025.25.22 완료]
+* 4.4 WWDG [2025.25.22 완료]
+* 4.5 USART_rb [2025.25.22 완료]
+* 4.6 TIM_PWM [2025.25.22 완료]
 
 # 5.NUCLEOEVB 보드를 이용한 실습
 * 5.1 GPIO
